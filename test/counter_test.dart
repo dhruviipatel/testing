@@ -35,7 +35,7 @@ void main() {
       expect(val, 1);
     });
 
-    test('check after click on increamet button value of count should be -1',
+    test('check after click on decreamet button value of count should be -1',
         () {
       counter.decrementCount();
       var val = counter.count;
