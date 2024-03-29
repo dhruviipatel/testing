@@ -7,7 +7,7 @@ import 'package:mocktail/mocktail.dart';
 import 'package:testing_app/logic/apirepo.dart';
 import 'package:testing_app/models/commentModel.dart';
 
-class MockhttpClient extends Mock implements MockClient {}
+class MockhttpClient extends Mock implements Client {}
 
 void main() {
   late ApiRepo apirepo;
@@ -31,7 +31,7 @@ void main() {
                       "id": 1,
                       "name": "id labore ex et quam laborum",
                       "email": "Eliseo@gardner.biz",
-                      "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+                      "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\\ntempora quo necessitatibus\\ndolor quam autem quasi\\nreiciendis et nam sapiente accusantium"
                     }
              ''', 200);
         });
@@ -67,7 +67,7 @@ void main() {
               "name": "id labore",
               "email": "Eliseo@gardner.biz",
               "body":
-                  "tatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+                  "tatibus\\ndolor quam autem quasi\\nreiciendis et nam sapiente accusantium"
             },
             {
               "postId": 123,
@@ -75,7 +75,7 @@ void main() {
               "name": "quo vero reiciendis velique earum",
               "email": "Jayne_Kuhic@sydney.com",
               "body":
-                  "euod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+                  "euod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et"
             },
           ];
 
